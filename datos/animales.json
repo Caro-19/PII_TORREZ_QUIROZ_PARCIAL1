@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "nombre": "Luna",
+        "especie": "Perro",
+        "edad": 2,
+        "raza": "Labrador",
+        "sexo": "Hembra",
+        "descripcion": "Luna es una perrita juguetona y cariñosa que ama correr en el parque. Se lleva muy bien con niños y otros animales. Siempre está dispuesta a dar amor y recibir mimos.",
+        "emoji": "",
+        "imagen": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=420&fit=crop&auto=format&q=80"
+    },
+
+    {
+        "id": 2,
+        "nombre": "Milo",
+        "especie": "Gato",
+        "edad": 1,
+        "raza": "Mestizo",
+        "sexo": "Macho",
+        "descripcion": "Milo es un gatito curioso y tranquilo. Le encanta explorar cada rincón de la casa, tomar siestas al sol y jugar con cualquier cosa que encuentre. Muy cariñoso.",
+        "emoji": "",
+        "imagen": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&h=420&fit=crop&auto=format&q=80"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Nala",
+        "especie": "Perro",
+        "edad": 3,
+        "raza": "Beagle",
+        "sexo": "Hembra",
+        "descripcion": "Nala es una beagle activa, sociable y llena de energía. Disfruta de los paseos largos y es muy leal a su familia. Ideal para hogares con espacio al aire libre.",
+        "emoji": "",        
+        "imagen": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=600&h=420&fit=crop&auto=format&q=80"
+    },
+
+    {
+        "id": 4,
+        "nombre": "Simba",
+        "especie": "Gato",
+        "edad": 4,
+        "raza": "Siamés",
+        "sexo": "Macho",
+        "descripcion": "Simba es elegante, tranquilo y muy cariñoso. Busca un hogar tranquilo donde pueda recibir atención y descansar en ambientes cálidos. Le gustan las rutinas estables.",
+        "emoji": "",       
+        "imagen": "https://images.unsplash.com/photo-1518791841217-8f162f1912da?w=600&h=420&fit=crop&auto=format&q=80"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Rocky",
+        "especie": "Perro",
+        "edad": 2,
+        "raza": "Pastor Alemán",
+        "sexo": "Macho",
+        "descripcion": "Rocky es inteligente, obediente y muy entrenado. Es el compañero perfecto para familias activas que disfruten del aire libre y los desafíos mentales.",
+        "emoji": "",        
+        "imagen": "https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?w=600&h=420&fit=crop&auto=format&q=80"
+    },
+    
+    {
+        "id": 6,
+        "nombre": "Maximus",
+        "especie": "Perro",
+        "edad": 1,
+        "raza": "Pastor Alemán",
+        "sexo": "Macho",
+        "descripcion": "Maximus es un perro imperactivo y cariñoso que disfruta de la compañía humana. Es ideal para hogares que buscan un compañero con energía y afectuoso.",
+        "emoji": "",        
+        "imagen": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&h=420&fit=crop&auto=format&q=80"
+    }
+]

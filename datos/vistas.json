@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "nombre": "Inicio",
+        "url": "index.php",
+        "activa": 1,
+        "restringida": 0,
+        "nav": 1
+    },
+
+    {
+        "id": 2,
+        "nombre": "Adopción",
+        "url": "vistas/adopcion.php",
+        "activa": 1,
+        "restringida": 0,
+        "nav": 1
+    },
+
+    {
+        "id": 3,
+        "nombre": "Perfil de Animal",
+        "url": "vistas/perfil_x_animal.php",
+        "activa": 1,
+        "restringida": 0,
+        "nav": 0
+    },
+    
+    { 
+        "id": 4,
+        "nombre": "Adoptar",
+        "url": "vistas/adoptar.php",
+        "activa": 1,
+        "restringida": 0,
+        "nav": 0
+    },
+
+    {
+        "id": 8,
+        "nombre": "Mascota Ideal",
+        "url": "vistas/test.php",
+        "activa": 1,
+        "restringida": 0,
+        "nav": 1
+    },
+
+    {
+        "id": 5,
+        "nombre": "404-Pagina no encontrada",
+        "url": "vistas/404.php",
+        "activa": 1,
+        "restringida": 0,
+        "nav": 0
+    },
+
+    {
+        "id": 6,
+        "nombre": "403-Página Prohibida",
+        "url": "vistas/403.php",
+        "activa": 1,
+        "restringida": 0,
+        "nav": 0
+    },
+
+    {
+        "id": 7,
+        "nombre": "503-Servicio No Disponible",
+        "url": "vistas/503.php",
+        "activa": 1,
+        "restringida": 0,
+        "nav": 0
+    }
+]
