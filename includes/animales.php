@@ -1,20 +1,21 @@
 <?php
-require_once __DIR__ . '/../clases/Animal.php';
-$json = file_get_contents(__DIR__ . '/../datos/animales.json');
-$animales_datos = json_decode($json, true);
+require_once './clases/Animal.php';
+$json = file_get_contents('./datos/animales.json');
+$animalesDatos = json_decode($json, true);
 
 $animales = [];
 
-foreach ($animales_datos as $item) {
+foreach ($animalesDatos as $item) {
+
     $animales[$item['id']] = new Animal(
         $item['id'],
-        $item['nombre'],
         $item['especie'],
-        $item['edad'],
         $item['raza'],
+        $item['nombre'],
+        $item['edad'],
         $item['sexo'],
+        $item['imagen'],
         $item['descripcion'],
-        $item['emoji'],
-        $item['imagen']
+        $item['emoji']
     );
 }

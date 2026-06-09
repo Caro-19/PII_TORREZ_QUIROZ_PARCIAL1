@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__ . '/../includes/header.php';
-verificarVista('Adopción', $vistas);
 require_once __DIR__ . '/../includes/animales.php';
 ?>
 
@@ -27,17 +25,15 @@ require_once __DIR__ . '/../includes/animales.php';
             <div class="card-body">
                 <h3><?= htmlspecialchars($animal->getNombre()) ?></h3>
                 <ul class="card-meta">
-                    <li><i class="fa-solid fa-dna"></i> <?= htmlspecialchars($animal->getRaza()) ?></li>
+                    <li><i class="fa-solid fa-dna"></i> <?= htmlspecialchars(implode(', ', $animal->getRaza())) ?></li>
                     <li><i class="fa-solid fa-cake-candles"></i> <?= htmlspecialchars($animal->getEdad()) ?> año<?= $animal->getEdad() != 1 ? 's' : '' ?></li>
                     <li><i class="fa-solid fa-venus-mars"></i> <?= htmlspecialchars($animal->getSexo()) ?></li>
                 </ul>
                 <p class="card-desc"><?= htmlspecialchars(mb_substr($animal->getDescripcion(), 0, 90)) ?>...</p>
-                <a class="btn btn-full" href="perfil_x_animal.php?animal=<?= urlencode($id) ?>">
+                <a class="btn btn-full" href="index.php?s=perfilXAnimal&animal=<?= urlencode($id) ?>">
                     Ver perfil <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </article>
     <?php endforeach; ?>
 </section>
-
-<?php include __DIR__ . '/../includes/footer.php'; ?>

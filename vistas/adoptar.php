@@ -1,20 +1,16 @@
 <?php
-require_once __DIR__ . '/../config.php';
 require_once __DIR__ . '/../includes/animales.php';
 
 $id         = (int)($_GET['animal'] ?? 0);
 $animal       = $animales[$id] ?? null;
 if (!$animal) {
-    header('Location: ' . BASE_URL . 'vistas/404.php');
+    header("Location:../index.php?s=404");
     exit;
 };
 $nombreAnimal = $animal ? $animal->getNombre() : ucfirst($id);
-$backLink     = $animal ? 'perfil_x_animal.php?animal=' . urlencode($id) : 'adopcion.php';
-
-require_once __DIR__ . '/../includes/header.php';
-
-verificarVista('Adoptar', $vistas);
-?>
+$backLink = $animal
+    ? '../index.php?s=perfilXAnimal&animal' . urlencode($id)
+    : '../index.php?s=adopcion';?>
 
 <div class="page-header page-header-sm">
     <a href="<?= $backLink ?>" class="back-link">
@@ -32,13 +28,13 @@ verificarVista('Adoptar', $vistas);
                 <img src="<?= htmlspecialchars($animal->getImagen()) ?>" alt="<?= htmlspecialchars($nombreAnimal) ?>">
                 <div>
                     <strong><?= htmlspecialchars($animal->getNombre()) ?></strong>
-                    <span><?= htmlspecialchars($animal->getRaza()) ?> · <?= htmlspecialchars($animal->getEdad()) ?> año<?= $animal->getEdad() != 1 ? 's' : '' ?></span>
+                    <span><?= htmlspecialchars(implode(', ', $animal->getRaza())) ?> · <?= htmlspecialchars($animal->getEdad()) ?> año<?= $animal->getEdad() != 1 ? 's' : '' ?></span>
                 </div>
             </div>
         <?php endif; ?>
     </div>
 
-    <form action="procesar_adopcion.php" method="POST" data-validate novalidate>
+    <form action="index.php?s=procesarAdopcion" method="POST" data-validate novalidate>
 
         <input type="hidden" name="animal" value="<?= htmlspecialchars($id) ?>">
 
@@ -104,5 +100,4 @@ verificarVista('Adoptar', $vistas);
     </form>
 </div>
 
-<script src="<?php echo BASE_URL; ?>js/validacion.js"></script>
-<?php require_once __DIR__ . '/../includes/footer.php'; ?>
+<script src="js/validacion.js"></script>

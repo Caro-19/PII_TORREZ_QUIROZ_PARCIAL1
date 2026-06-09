@@ -4,7 +4,7 @@
         "nombre": "Luna",
         "especie": "Perro",
         "edad": 2,
-        "raza": "Labrador",
+        "raza": ["Labrador"],
         "sexo": "Hembra",
         "descripcion": "Luna es una perrita juguetona y cariñosa que ama correr en el parque. Se lleva muy bien con niños y otros animales. Siempre está dispuesta a dar amor y recibir mimos.",
         "emoji": "",
@@ -16,7 +16,7 @@
         "nombre": "Milo",
         "especie": "Gato",
         "edad": 1,
-        "raza": "Mestizo",
+        "raza": ["Gato Común Europeo","Oriental"],
         "sexo": "Macho",
         "descripcion": "Milo es un gatito curioso y tranquilo. Le encanta explorar cada rincón de la casa, tomar siestas al sol y jugar con cualquier cosa que encuentre. Muy cariñoso.",
         "emoji": "",
@@ -28,11 +28,11 @@
         "nombre": "Nala",
         "especie": "Perro",
         "edad": 3,
-        "raza": "Beagle",
+        "raza": ["Beagle"],
         "sexo": "Hembra",
         "descripcion": "Nala es una beagle activa, sociable y llena de energía. Disfruta de los paseos largos y es muy leal a su familia. Ideal para hogares con espacio al aire libre.",
         "emoji": "",        
-        "imagen": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=600&h=420&fit=crop&auto=format&q=80"
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f5/MiloSmet.JPG"
     },
 
     {
@@ -40,11 +40,11 @@
         "nombre": "Simba",
         "especie": "Gato",
         "edad": 4,
-        "raza": "Siamés",
+        "raza": ["Siamés"],
         "sexo": "Macho",
         "descripcion": "Simba es elegante, tranquilo y muy cariñoso. Busca un hogar tranquilo donde pueda recibir atención y descansar en ambientes cálidos. Le gustan las rutinas estables.",
         "emoji": "",       
-        "imagen": "https://images.unsplash.com/photo-1518791841217-8f162f1912da?w=600&h=420&fit=crop&auto=format&q=80"
+        "imagen": "https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=532,height=532,fit=cover/animal/breed/pictures/6672b0e7be830389119222.jpg"
     },
 
     {
@@ -52,7 +52,7 @@
         "nombre": "Rocky",
         "especie": "Perro",
         "edad": 2,
-        "raza": "Pastor Alemán",
+        "raza": ["Pastor Alemán"],
         "sexo": "Macho",
         "descripcion": "Rocky es inteligente, obediente y muy entrenado. Es el compañero perfecto para familias activas que disfruten del aire libre y los desafíos mentales.",
         "emoji": "",        
@@ -64,10 +64,251 @@
         "nombre": "Maximus",
         "especie": "Perro",
         "edad": 1,
-        "raza": "Pastor Alemán",
+        "raza": ["Pastor Alemán"],
         "sexo": "Macho",
         "descripcion": "Maximus es un perro imperactivo y cariñoso que disfruta de la compañía humana. Es ideal para hogares que buscan un compañero con energía y afectuoso.",
         "emoji": "",        
-        "imagen": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&h=420&fit=crop&auto=format&q=80"
+        "imagen": "https://thumbs.dreamstime.com/b/pastor-alem%C3%A1n-del-retrato-del-perro-edad-a%C3%B1o-77214437.jpg"
+    },
+
+    {
+        "id": 7,
+        "nombre": "Kiara",
+        "especie": "Gato",
+        "edad": 2,
+        "raza": ["Maine Coon"],
+        "sexo": "Hembra",
+        "descripcion": "Kiara es una gatita elegante y muy curiosa. Le encanta observar por las ventanas, jugar con juguetes pequeños y dormir en lugares cómodos.",
+        "emoji": "",
+        "imagen": "https://bestforpet.com.au/wp-content/uploads/2025/11/Maine-coon.jpg"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Toby",
+        "especie": "Perro",
+        "edad": 4,
+        "raza": ["Golden Retriever"],
+        "sexo": "Macho",
+        "descripcion": "Toby es amistoso, paciente y muy juguetón. Disfruta correr en parques y pasar tiempo con niños y otros animales.",
+        "emoji": "",
+        "imagen": "https://images.ctfassets.net/ybw2uvetxkr8/5rS8iwJwk7y6wbT6bWEi7J/4faa4ebf48660cd74344784581fab867/le-golden-retriever-douceur-et-intelligence.png?fm=webp&q=80"
+    },
+
+    {
+        "id": 9,
+        "nombre": "Luna",
+        "especie": "Gato",
+        "edad": 1,
+        "raza": ["Siamés"],
+        "sexo": "Hembra",
+        "descripcion": "Luna es una gatita juguetona y curiosa. Le encanta explorar y jugar con sus juguetes favoritos.",
+        "emoji": "",
+        "imagen": "https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-06Balinese.01.jpg?itok=MR_oU8o-"
+    },
+
+    {
+        "id": 10,
+        "nombre": "Charlie",
+        "especie": "Perro",
+        "edad": 3,
+        "raza": ["Bulldog Inglés"],
+        "sexo": "Macho",
+        "descripcion": "Charlie es un perro tranquilo y muy cariñoso. Disfruta de los paseos cortos y de pasar tiempo con su familia.",
+        "emoji": "",
+        "imagen": "https://eu-central-1.graphassets.com/AnwjgMYRvQfWK3bRPjoq3z/resize=height:608,width:1080/output=format:webp/kt2NjkRKTCqfd1VQAyE9"
+    },
+
+    {
+        "id": 11,
+        "nombre": "Bruno",
+        "especie": "Perro",
+        "edad": 5,
+        "raza": ["Bulldog Francés"],
+        "sexo": "Macho",
+        "descripcion": "Bruno es tranquilo y muy cariñoso. Prefiere descansar cerca de sus dueños y disfruta de caminatas cortas y juegos suaves.",
+        "emoji": "",
+        "imagen": "https://www.frenchie.shop/cdn/shop/articles/french-bulldog-277255_1920.jpg?v=1634346872&width=1100"
+    },
+
+
+    {
+        "id": 12,
+        "nombre": "Leo",
+        "especie": "Gato",
+        "edad": 3,
+        "raza": ["Británico de Pelo Corto"],
+        "sexo": "Macho",
+        "descripcion": "Leo es independiente pero muy afectuoso. Le gusta descansar cerca de las personas y jugar en momentos específicos del día.",
+        "emoji": "",
+        "imagen": "https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-06British20Shorthair.2.jpg?itok=rJ6nE1iG"
+    },
+
+    {
+        "id": 13,
+        "nombre": "Lola",
+        "especie": "Perro",
+        "edad": 1,
+        "raza": ["Caniche"],
+        "sexo": "Hembra",
+        "descripcion": "Lola es pequeña, inteligente y muy energética. Aprende trucos rápidamente y disfruta mucho de la compañía humana.",
+        "emoji": "",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQztx2CH-zOYqw0zfeIJGRI280DbMSkkKbGsg&s"
+    },
+
+    {
+        "id": 14,
+        "nombre": "Zeus",
+        "especie": "Perro",
+        "edad": 6,
+        "raza": ["Rottweiler"],
+        "sexo": "Macho",
+        "descripcion": "Zeus es fuerte, protector y extremadamente leal. Necesita un hogar responsable donde pueda recibir ejercicio y entrenamiento constante.",
+        "emoji": "",
+        "imagen": "https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg"
+    },
+
+    {
+        "id": 15,
+        "nombre": "Olivia",
+        "especie": "Gato",
+        "edad": 2,
+        "raza": ["Persa"],
+        "sexo": "Hembra",
+        "descripcion": "Olivia es calmada y muy elegante. Disfruta de ambientes tranquilos y de recibir cepillados frecuentes.",
+        "emoji": "",
+        "imagen": "https://www.santevet.es/wp-content/uploads/2024/01/un_gato_persa-39.jpg"
+    },
+
+    {
+        "id": 16,
+        "nombre": "Coco",
+        "especie": "Perro",
+        "edad": 2,
+        "raza": ["Chihuahua"],
+        "sexo": "Hembra",
+        "descripcion": "Coco es pequeña pero llena de personalidad. Es valiente, curiosa y muy apegada a su dueño. Ideal para departamentos y personas que buscan un compañero fiel y compacto.",
+        "emoji": "",
+        "imagen": "https://media.istockphoto.com/id/1313232209/es/foto/chihuahua-marr%C3%B3n-sentado-en-el-suelo-perro-peque%C3%B1o-en-casa-asi%C3%A1tica-sentirse-feliz-y-relajarse.jpg?s=612x612&w=0&k=20&c=O8Ip4kGzyVBI9_BAzxLbbLy908-SUVwob_G8yt-LCl0="
+    },
+
+    {
+        "id": 17,
+        "nombre": "Rex",
+        "especie": "Perro",
+        "edad": 3,
+        "raza": ["Pit Bull"],
+        "sexo": "Macho",
+        "descripcion": "Rex es enérgico, leal y muy cariñoso con su familia. Necesita ejercicio diario y un dueño comprometido. Con el entrenamiento adecuado es un compañero extraordinario.",
+        "emoji": "",
+        "imagen": "https://nerdines.win/download/multimedia.normal.b8e165237c79fdc5.bm9ybWFsLndlYnA=.webp"
+    },
+
+    {
+        "id": 18,
+        "nombre": "Tigre",
+        "especie": "Gato",
+        "edad": 1,
+        "raza": ["Bengala"],
+        "sexo": "Macho",
+        "descripcion": "Tigre es un gato salvaje en apariencia pero muy afectuoso. Le encanta trepar, explorar y jugar. Es ideal para hogares activos que disfruten de un felino dinámico y llamativo.",
+        "emoji": "",
+        "imagen": "https://www.clinicas-veterpet.com/wp-content/uploads/2024/11/veterpet-gato-bengali.jpg"
+    },
+
+    {
+        "id": 19,
+        "nombre": "Nube",
+        "especie": "Gato",
+        "edad": 3,
+        "raza": ["Ragdoll"],
+        "sexo": "Hembra",
+        "descripcion": "Nube es dulce, tranquila y muy sociable. Se relaja completamente al ser alzada, de ahí su nombre de raza. Perfecta para hogares con niños o personas mayores.",
+        "emoji": "",
+        "imagen": "https://www.infobae.com/resizer/v2/DDBXRQXN4JGVVIIMGCTTQ3AI5Y.jpg?auth=166324b211b263f52e49c4a93d1038e12421c510921caa900c654a2b10fab810&smart=true&width=1200&height=1200&quality=85"
+    },
+
+    {
+        "id": 20,
+        "nombre": "Fénix",
+        "especie": "Gato",
+        "edad": 2,
+        "raza": ["Esfinge (Sphynx)"],
+        "sexo": "Macho",
+        "descripcion": "Fénix es único, sin pelo y lleno de carisma. Es extremadamente cariñoso y siempre busca el calor humano. Un compañero sorprendente para quienes buscan algo diferente.",
+        "emoji": "",
+        "imagen": "https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=720,height=405,fit=cover/animal/breed/cat/adult/676d5a51d1f40103732431.jpg"
+    },
+
+    {
+        "id": 21,
+        "nombre": "Blanca",
+        "especie": "Gato",
+        "edad": 4,
+        "raza": ["Angora"],
+        "sexo": "Hembra",
+        "descripcion": "Blanca es elegante, grácil y muy inteligente. Le encanta interactuar con las personas y aprender rutinas. Su pelaje sedoso requiere cepillados frecuentes.",
+        "emoji": "",
+        "imagen": "https://clinicalaveterinaria.it/wp-content/uploads/2025/01/Gatto-angora-Turco.jpg"
+    },
+
+    {
+        "id": 22,
+        "nombre": "Dobby",
+        "especie": "Gato",
+        "edad": 2,
+        "raza": ["Scottish Fold"],
+        "sexo": "Macho",
+        "descripcion": "Dobby es tranquilo, curioso y de orejas características. Se adapta bien a la vida en interior y disfruta de juegos suaves y de la compañía de su familia.",
+        "emoji": "",
+        "imagen": "https://www.zooplus.es/magazine/wp-content/uploads/2019/02/Scottish-fold-3.webp"
+    },
+
+    {
+        "id": 23,
+        "nombre": "Taiga",
+        "especie": "Gato",
+        "edad": 3,
+        "raza": ["Siberiano"],
+        "sexo": "Hembra",
+        "descripcion": "Taiga es robusta, activa y muy juguetona. Su pelaje espeso la protege del frío y su personalidad aventurera la hace ideal para hogares con jardín o espacios amplios.",
+        "emoji": "",
+        "imagen": "https://clinicalaveterinaria.it/wp-content/uploads/2025/04/gatto-siberiano-delle-foreste.jpg"
+    },
+
+    {
+        "id": 24,
+        "nombre": "Sahara",
+        "especie": "Gato",
+        "edad": 1,
+        "raza": ["Abisinio"],
+        "sexo": "Hembra",
+        "descripcion": "Sahara es ágil, curiosa e incansable. Le encanta explorar, saltar y estar en constante movimiento. Ideal para personas activas que disfruten de un gato muy dinámico.",
+        "emoji": "",
+        "imagen": "https://lepardland.com/wp-content/uploads/2022/02/gatoabisinio.jpg"
+    },
+
+    {
+        "id": 25,
+        "nombre": "Misha",
+        "especie": "Gato",
+        "edad": 5,
+        "raza": ["Ruso Azul"],
+        "sexo": "Macho",
+        "descripcion": "Misha es reservado pero muy leal a su familia. De pelaje azul plateado y ojos verdes intensos, es un gato elegante que prefiere ambientes tranquilos y rutinas estables.",
+        "emoji": "",
+        "imagen": "https://www.catalunyaplants.com/wp-content/uploads/2015/10/raza-de-gato-azul-ruso1.jpg"
+    },
+
+    {
+        "id": 26,
+        "nombre": "Bobtail",
+        "especie": "Gato",
+        "edad": 3,
+        "raza": ["Manx"],
+        "sexo": "Macho",
+        "descripcion": "Bobtail es sociable, inteligente y muy juguetón. Se caracteriza por su cola corta o ausente. Se lleva bien con niños y otros animales y disfruta de la vida en familia.",
+        "emoji": "",
+        "imagen": "https://www.cat-breed-info.com/images/manxcat.jpg"
     }
 ]

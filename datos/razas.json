@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "especie": "Perro",
+    "nombre": "Labrador",
+    "tamanio": "Grande",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 2,
+    "especie": "Perro",
+    "nombre": "Pastor Alemán",
+    "tamanio": "Grande",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 3,
+    "especie": "Perro",
+    "nombre": "Golden Retriever",
+    "tamanio": "Grande",
+    "nivelEnergia": "Medio-Alto"
+  },
+  {
+    "id": 4,
+    "especie": "Perro",
+    "nombre": "Bulldog Francés",
+    "tamanio": "Pequeño",
+    "nivelEnergia": "Bajo"
+  },
+  {
+    "id": 5,
+    "especie": "Perro",
+    "nombre": "Chihuahua",
+    "tamanio": "Toy",
+    "nivelEnergia": "Medio"
+  },
+  {
+    "id": 6,
+    "especie": "Perro",
+    "nombre": "Beagle",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 7,
+    "especie": "Gato",
+    "nombre": "Siamés",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 8,
+    "especie": "Gato",
+    "nombre": "Persa",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Bajo"
+  },
+  {
+    "id": 9,
+    "especie": "Gato",
+    "nombre": "Maine Coon",
+    "tamanio": "Gigante",
+    "nivelEnergia": "Medio"
+  },
+  {
+    "id": 10,
+    "especie": "Gato",
+    "nombre": "Bengala",
+    "tamanio": "Grande",
+    "nivelEnergia": "Muy Alto"
+  },
+  {
+    "id": 11,
+    "especie": "Gato",
+    "nombre": "Ragdoll",
+    "tamanio": "Grande",
+    "nivelEnergia": "Bajo"
+  },
+  {
+    "id": 12,
+    "especie": "Gato",
+    "nombre": "Esfinge (Sphynx)",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 13,
+    "especie": "Gato",
+    "nombre": "Angora",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Medio"
+  },
+  {
+    "id": 14,
+    "especie": "Gato",
+    "nombre": "Scottish Fold",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Medio"
+  },
+  {
+    "id": 15,
+    "especie": "Gato",
+    "nombre": "Siberiano",
+    "tamanio": "Grande",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 16,
+    "especie": "Gato",
+    "nombre": "Abisinio",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Muy Alto"
+  },
+  {
+    "id": 17,
+    "especie": "Gato",
+    "nombre": "Ruso Azul",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Medio"
+  },
+  {
+    "id": 18,
+    "especie": "Gato",
+    "nombre": "Manx",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Medio"
+  },
+  {
+    "id": 19,
+    "especie": "Perro",
+    "nombre": "Pit Bull",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 20,
+    "especie": "Perro",
+    "nombre": "Rottweiler",
+    "tamanio": "Grande",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 22,
+    "especie": "Gato",
+    "nombre": "Gato Común Europeo",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Medio"
+  },
+  {
+    "id": 23,
+    "especie": "Gato",
+    "nombre": "Oriental",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Alto"
+  },
+  {
+    "id": 24,
+    "especie": "Perro",
+    "nombre": "Bulldog Inglés",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Bajo"
+  },
+  {
+    "id": 25,
+    "especie": "Gato",
+    "nombre": "Británico de Pelo Corto",
+    "tamanio": "Mediano",
+    "nivelEnergia": "Bajo"
+  },
+  {
+    "id": 26,
+    "especie": "Perro",
+    "nombre": "Caniche",
+    "tamanio": "Pequeño",
+    "nivelEnergia": "Alto"
+  }
+]

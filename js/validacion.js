@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const rules = {
         nombre: {
             test: v => v.trim().length >= 2 && /^[a-záéíóúüñA-ZÁÉÍÓÚÜÑ\s''-]+$/.test(v.trim()),
-            msg:  'Ingresá tu nombre completo (solo letras, mínimo 2 caracteres).'
+            msg:  'Ingresá tu nombre completo'
         },
         email: {
             test: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()),

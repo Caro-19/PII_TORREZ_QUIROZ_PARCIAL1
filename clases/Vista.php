@@ -3,20 +3,39 @@ class Vista
 {
     private int $id;
     private string $nombre;
-    private string $url;
+    private string $titulo;
     private bool $activa;
     private bool $restringida;
-    private bool $nav;
 
-    public function __construct(int $id, string $nombre, string $url, bool $activa = true, bool $restringida = false, bool $nav = true)
+    public static function validarVista(string $pedido): Vista
     {
-        $this->id          = $id;
-        $this->nombre      = $nombre;
-        $this->url         = $url;
-        $this->activa      = $activa;
-        $this->restringida = $restringida;
-        $this->nav         = $nav;
+        $datos = file_get_contents(__DIR__ . '/../datos/vistas.json');
+        $jsonDatos = json_decode($datos);
+
+        // Se recorre el JSON para encontrar la vista solicitada
+        foreach ($jsonDatos as $v) {
+            if ($v->nombre == $pedido) {
+                $vista = new self();
+                $vista->id = $v->id;
+                $vista->nombre = $v->nombre;
+                $vista->titulo = $v->titulo;
+                $vista->activa = $v->activa;
+                $vista->restringida = $v->restringida;
+                return $vista;
+            }
+        }
+
+        // Si no se encuentra la vista, se devuelve una vista de error 404
+        $vista = new self();
+        $vista->id = 5;
+        $vista->nombre = '404';
+        $vista->titulo = '404 - Página no encontrada';
+        $vista->activa = false;
+        $vista->restringida = false;
+
+        return $vista;
     }
+
 
     //GETTERS
     public function getId(): int
@@ -27,9 +46,9 @@ class Vista
     {
         return $this->nombre;
     }
-    public function getUrl(): string
+    public function getTitulo(): string
     {
-        return $this->url;
+        return $this->titulo;
     }
     public function getActiva(): bool
     {
@@ -39,10 +58,7 @@ class Vista
     {
         return $this->restringida;
     }
-    public function getNav(): bool
-    {
-        return $this->nav;
-    }
+
 
     //SETTERS
     public function setId(int $id): void
@@ -53,9 +69,9 @@ class Vista
     {
         $this->nombre = $nombre;
     }
-    public function setUrl(string $url): void
+    public function setTitulo(string $titulo): void
     {
-        $this->url = $url;
+        $this->titulo = $titulo;
     }
     public function setActiva(bool $activa): void
     {
@@ -64,9 +80,5 @@ class Vista
     public function setRestringida(bool $restringida): void
     {
         $this->restringida = $restringida;
-    }
-    public function setNav(bool $nav): void
-    {
-        $this->nav = $nav;
     }
 }

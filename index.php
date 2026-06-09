@@ -1,92 +1,64 @@
 <?php
-require_once __DIR__ . '/config.php';
-require_once __DIR__ . '/includes/header.php';
-require_once __DIR__ . '/includes/animales.php';
+require_once 'clases/Vista.php';
+$vista = Vista::validarVista($_GET['s'] ?? 'inicio');
+
 ?>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-inner">
-        <div class="hero-text">
-            <p class="hero-eyebrow">
-                <i class="fa-solid fa-paw"></i> Adopciones abiertas
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVet - :: <?= $vista->getTitulo() ?></title>
+
+    <!-- Google Fonts: Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.php?s=inicio" class="logo">
+                <i class="fa-solid fa-paw"></i> PetVet
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.php?s=inicio">Inicio</a></li>
+                    <li><a href="index.php?s=adopcion">Adopciones</a></li>
+                    <li><a href="index.php?s=mascotaIdeal">Mascota Ideal</a></li>
+                    <li><a href="index.php?s=contacto">Contacto</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <?php
+        require_once 'vistas/' . $vista->getNombre() . '.php';
+        ?>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-logo">
+                <i class="fa-solid fa-paw"></i> PetVet
             </p>
-            <h1>Dale un hogar a<br><em>quien lo necesita</em></h1>
-            <p>En PetVet conectamos animales que buscan familia con personas que buscan compañía. Adoptá con amor y responsabilidad.</p>
-            <div class="hero-actions">
-                <a class="btn btn-accent btn-lg" href="<?php echo BASE_URL; ?>vistas/adopcion.php">
-                    Ver animales <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a class="btn btn-outline btn-lg" href="#como-funciona">
-                    Cómo funciona
-                </a>
-            </div>
+            <p>Adoptá con responsabilidad · Todos los animales merecen un hogar</p>
+            <p class="footer-copy">&copy; <?= date('Y') ?> PetVet Veterinaria</p>
         </div>
-        <div class="hero-image">
-            <img
-                src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=700&h=560&fit=crop&auto=format&q=80"
-                alt="Perro y gato juntos esperando adopción">
-            <div class="hero-image-badge">
-                <i class="fa-solid fa-circle-check"></i>
-                Todos vacunados y desparasitados
-            </div>
-        </div>
-    </div>
+    </footer>
 
-    <div class="hero-stats">
-        <div class="stat">
-            <span class="stat-num"><?= count($animales) ?></span>
-            <span class="stat-label"><i class="fa-solid fa-paw"></i> Animales esperándote</span>
-        </div>
-        <div class="stat">
-            <span class="stat-num">100%</span>
-            <span class="stat-label"><i class="fa-solid fa-shield-heart"></i> Vacunados</span>
-        </div>
-        <div class="stat">
-            <span class="stat-num">$0</span>
-            <span class="stat-label"><i class="fa-solid fa-tag"></i> Costo de adopción</span>
-        </div>
-    </div>
-</section>
+</body>
 
-<!-- CÓMO FUNCIONA -->
-<section class="features" id="como-funciona">
-    <div class="section-header">
-        <h2>¿Cómo funciona?</h2>
-        <p>El proceso es simple, transparente y está pensado para el bienestar de cada animal.</p>
-    </div>
-    <div class="features-grid">
-        <div class="feature-card">
-            <a href="<?php echo BASE_URL; ?>vistas/adopcion.php">
-                <div class="feature-icon-wrap">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <span class="feature-step">01</span>
-                <h3>Explorá los perfiles</h3>
-                <p>Conocé a cada animal: su historia, personalidad y necesidades. Encontrá el compañero ideal para tu estilo de vida.</p>
-            </a>
-        </div>
-        <div class="feature-card">
-            <a href="<?php echo BASE_URL; ?>vistas/adoptar.php">
-            <div class="feature-icon-wrap">
-                <i class="fa-solid fa-file-pen"></i>
-            </div>
-            <span class="feature-step">02</span>
-            <h3>Completá el formulario</h3>
-            <p>Contanos sobre vos y tu hogar. Queremos asegurarnos de que sea la combinación perfecta para ambos.</p>
-            </a>
-        </div>
-        <div class="feature-card">
-            <a href="<?php echo BASE_URL; ?>vistas/">
-                <div class="feature-icon-wrap">
-                    <i class="fa-solid fa-house-heart"></i>
-                </div>
-                <span class="feature-step">03</span>
-                <h3>Llevate a tu compañero</h3>
-                <p>Nos ponemos en contacto, coordinamos la entrega y te acompañamos en los primeros pasos de la convivencia.</p>
-            </a>
-        </div>
-    </div>
-</section>
-
-<?php require_once __DIR__ . '/includes/footer.php'; ?>
+</html>

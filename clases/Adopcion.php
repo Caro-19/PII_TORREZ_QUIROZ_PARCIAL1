@@ -2,22 +2,34 @@
 // La clase Adopcion representa una solicitud de adopción de un animal en la sección de adopciones.
 class Adopcion
 {
+    private int $id;
     private Animal $animal;
     private string $nombreAdoptante;
     private string $email;
     private string $telefono;
     private string $motivo;
 
-    public function __construct(Animal $animal, string $nombre, string $email, string $telefono, string $motivo)
-    {
+    public function __construct(
+        int $id,
+        Animal $animal,
+        string $nombreAdoptante,
+        string $email,
+        string $telefono,
+        string $motivo
+    ) {
+        $this->id = $id;
         $this->animal = $animal;
-        $this->nombreAdoptante = $nombre;
+        $this->nombreAdoptante = $nombreAdoptante;
         $this->email = $email;
         $this->telefono = $telefono;
         $this->motivo = $motivo;
     }
 
 
+    public function getId(): int
+    {
+        return $this->id;
+    }
     public function getAnimal(): Animal
     {
         return $this->animal;
@@ -39,6 +51,10 @@ class Adopcion
         return $this->motivo;
     }
 
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
     public function setAnimal(Animal $animal): void
     {
         $this->animal = $animal;
