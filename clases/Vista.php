@@ -21,21 +21,36 @@ class Vista
                 $vista->titulo = $v->titulo;
                 $vista->activa = $v->activa;
                 $vista->restringida = $v->restringida;
+
+                // Si la vista está desactivada → devuelve 503
+                if (!$vista->activa) {
+                    return self::vistaError(503, '503', '503 - Servicio no disponible');
+                }
+
+                if ($vista->restringida) {
+                    // Si la vista es restringida → devuelve 403
+                    return self::vistaError(403, '403', '403 - Página prohibida');
+                }
+
                 return $vista;
             }
         }
 
-        // Si no se encuentra la vista, se devuelve una vista de error 404
+        // Si no existe → devuelve 404
+        return self::vistaError(5, '404', '404 - Página no encontrada');
+    }
+
+    private static function vistaError(int $id, string $nombre, string $titulo): Vista
+    {
         $vista = new self();
-        $vista->id = 5;
-        $vista->nombre = '404';
-        $vista->titulo = '404 - Página no encontrada';
+        $vista->id = $id;
+        $vista->nombre = $nombre;
+        $vista->titulo = $titulo;
         $vista->activa = false;
         $vista->restringida = false;
 
         return $vista;
     }
-
 
     //GETTERS
     public function getId(): int

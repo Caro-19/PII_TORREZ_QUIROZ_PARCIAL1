@@ -85,5 +85,21 @@
     "titulo": "Procesar Adopción",
     "activa": 1,
     "restringida": 0
+    },
+
+    {
+    "id": 12,
+    "nombre": "procesarContacto",
+    "titulo": "Procesar Contacto",
+    "activa": 1,
+    "restringida": 0
+    },
+
+    {
+    "id": 13,
+    "nombre": "petShop",
+    "titulo": "Tienda de Mascotas",
+    "activa": 0,
+    "restringida": 0
     }
 ]

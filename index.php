@@ -20,6 +20,8 @@ $vista = Vista::validarVista($_GET['s'] ?? 'inicio');
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- Estilos propios -->
@@ -28,21 +30,50 @@ $vista = Vista::validarVista($_GET['s'] ?? 'inicio');
 
 <body>
     <header>
-        <div class="header-inner">
-            <a href="index.php?s=inicio" class="logo">
-                <i class="fa-solid fa-paw"></i> PetVet
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.php?s=inicio">Inicio</a></li>
-                    <li><a href="index.php?s=adopcion">Adopciones</a></li>
-                    <li><a href="index.php?s=mascotaIdeal">Mascota Ideal</a></li>
-                    <li><a href="index.php?s=contacto">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
 
-            </nav>
-        </div>
+                <a class="navbar-brand logo" href="index.php?s=inicio">
+                    <i class="fa-solid fa-paw"></i> PetVet
+                </a>
+                
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+
+                    <i class="bi bi-list"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?s=inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?s=adopcion">Adopciones</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?s=mascotaIdeal">Mascota Ideal</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?s=contacto">Contacto</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.php?s=petShop">Tienda</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     </header>
+                 
     <main>
         <?php
         require_once 'vistas/' . $vista->getNombre() . '.php';
@@ -60,5 +91,7 @@ $vista = Vista::validarVista($_GET['s'] ?? 'inicio');
     </footer>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

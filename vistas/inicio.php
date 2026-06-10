@@ -2,33 +2,34 @@
 require_once __DIR__ . '/../includes/animales.php';
 ?>
 <section class="hero">
-    <div class="hero-inner">
-        <div class="hero-text">
-            <p class="hero-eyebrow">
-                <i class="fa-solid fa-paw"></i> Adopciones abiertas
-            </p>
-            <h1>Dale un hogar a<br><em>quien lo necesita</em></h1>
-            <p>En PetVet conectamos animales que buscan familia con personas que buscan compañía. Adoptá con amor y responsabilidad.</p>
-            <div class="hero-actions">
-                <a class="btn btn-accent btn-lg" href="index.php?s=adopcion">
-                    Ver animales <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a class="btn btn-outline btn-lg" href="#como-funciona">
-                    Cómo funciona
-                </a>
+    <div class="hero-banner">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-eyebrow">
+                    <i class="fa-solid fa-paw"></i> Adopciones abiertas
+                </p>
+                <h1>Dale un hogar a<br><em>quien lo necesita</em></h1>
+                <p>En PetVet conectamos animales que buscan familia con personas que buscan compañía. Adoptá con amor y responsabilidad.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-accent btn-lg" href="index.php?s=adopcion">
+                        Ver animales <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="btn btn-outline btn-lg" href="#como-funciona">
+                        Cómo funciona
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <img
-                src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=700&h=560&fit=crop&auto=format&q=80"
-                alt="Perro y gato juntos esperando adopción">
-            <div class="hero-image-badge">
-                <i class="fa-solid fa-circle-check"></i>
-                Todos vacunados y desparasitados
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=700&h=560&fit=crop&auto=format&q=80"
+                    alt="Perro y gato juntos esperando adopción">
+                <div class="hero-image-badge">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Todos vacunados y desparasitados
+                </div>
             </div>
         </div>
     </div>
-
     <div class="hero-stats">
         <div class="stat">
             <span class="stat-num"><?= count($animales) ?></span>

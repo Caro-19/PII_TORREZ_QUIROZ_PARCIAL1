@@ -8,12 +8,10 @@ if (!$animal) {
     exit;
 };
 $nombreAnimal = $animal ? $animal->getNombre() : ucfirst($id);
-$backLink = $animal
-    ? '../index.php?s=perfilXAnimal&animal' . urlencode($id)
-    : '../index.php?s=adopcion';?>
+?>
 
 <div class="page-header page-header-sm">
-    <a href="<?= $backLink ?>" class="back-link">
+    <a href="index.php?s=perfilXAnimal&animal=<?= urlencode($id) ?>" class="back-link">
         <i class="fa-solid fa-arrow-left"></i> Volver al perfil
     </a>
 </div>

@@ -3,7 +3,7 @@
 class Adopcion
 {
     private int $id;
-    private Animal $animal;
+    private Animal $idAnimal;
     private string $nombreAdoptante;
     private string $email;
     private string $telefono;
@@ -11,28 +11,28 @@ class Adopcion
 
     public function __construct(
         int $id,
-        Animal $animal,
+        Animal $idAnimal,
         string $nombreAdoptante,
         string $email,
         string $telefono,
         string $motivo
     ) {
         $this->id = $id;
-        $this->animal = $animal;
+        $this->idAnimal = $idAnimal;
         $this->nombreAdoptante = $nombreAdoptante;
         $this->email = $email;
         $this->telefono = $telefono;
         $this->motivo = $motivo;
     }
 
-
+    // Getters
     public function getId(): int
     {
         return $this->id;
     }
-    public function getAnimal(): Animal
+    public function getIdAnimal(): Animal
     {
-        return $this->animal;
+        return $this->idAnimal;
     }
     public function getNombreAdoptante(): string
     {
@@ -51,13 +51,14 @@ class Adopcion
         return $this->motivo;
     }
 
+    // Setters
     public function setId(int $id): void
     {
         $this->id = $id;
     }
-    public function setAnimal(Animal $animal): void
+    public function setIdAnimal(Animal $idAnimal): void
     {
-        $this->animal = $animal;
+        $this->idAnimal = $idAnimal;
     }
     public function setNombreAdoptante(string $nombre): void
     {

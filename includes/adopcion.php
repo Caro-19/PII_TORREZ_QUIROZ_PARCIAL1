@@ -45,3 +45,35 @@ if (!empty($errores)) {
 $animalObj = $animales[$id];
 $adopcion = new Adopcion($id, $animalObj, $nombre, $email, $telefono, $motivo);
 
+
+//Leer el JSON
+$jsonPath   = __DIR__ . '/../datos/adopcion.json';
+$adopciones = [];
+
+if (file_exists($jsonPath)) {
+    $adopciones = json_decode(file_get_contents($jsonPath), true) ?? [];
+}
+
+//ID autoincremental
+$nuevoId = empty($adopciones)
+    ? 1
+    : max(array_column($adopciones, 'id')) + 1;
+
+$adopcion->setId($nuevoId);
+
+//Guardar en el JSON
+$adopciones[] = [
+    'id'              => $adopcion->getId(),
+    'idAnimal'        => $id,
+    'nombreAnimal'    => $animalObj->getNombre(),
+    'nombreAdoptante' => $adopcion->getNombreAdoptante(),
+    'email'           => $adopcion->getEmail(),
+    'telefono'        => $adopcion->getTelefono(),
+    'motivo'          => $adopcion->getMotivo(),
+];
+
+file_put_contents(
+    $jsonPath,
+    json_encode($adopciones, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
+);
+

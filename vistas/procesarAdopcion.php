@@ -13,7 +13,7 @@ require_once __DIR__ . '/../includes/adopcion.php';
         <i class="fa-solid fa-heart-pulse"></i>
         <div>
             <strong>Gracias, <?= htmlspecialchars($adopcion->getNombreAdoptante()) ?>.</strong>
-            <p>Tu solicitud para adoptar a <strong><?= htmlspecialchars($adopcion->getAnimal()->getNombre()) ?></strong> fue registrada con éxito.</p>
+            <p>Tu solicitud para adoptar a <strong><?= htmlspecialchars($adopcion->getIdAnimal()->getNombre()) ?></strong> fue registrada con éxito.</p>
         </div>
     </div>
 
@@ -22,9 +22,9 @@ require_once __DIR__ . '/../includes/adopcion.php';
     <div class="resumen-grid">
         <div class="resumen-item">
             <span class="resumen-label"><i class="fa-solid fa-paw"></i> Animal</span>
-            <span><?= htmlspecialchars($adopcion->getAnimal()->getNombre()) ?>
-                <?php if ($adopcion->getAnimal()->getImagen()): ?>
-                    — <?= htmlspecialchars($adopcion->getAnimal()->getEspecie()) ?>
+            <span><?= htmlspecialchars($adopcion->getIdAnimal()->getNombre()) ?>
+                <?php if ($adopcion->getIdAnimal()->getImagen()): ?>
+                    — <?= htmlspecialchars($adopcion->getIdAnimal()->getEspecie()) ?>
                 <?php endif; ?>
             </span>
         </div>
