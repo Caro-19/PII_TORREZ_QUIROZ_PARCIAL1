@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../includes/animales.php';
+require_once __DIR__ . '/../clases/Animal.php';
+$animales = Animal::cargarTodosLosAnimales();
 
 $id   = (int)($_GET['animal'] ?? 0);
 $animal = $animales[$id] ?? null;

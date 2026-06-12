@@ -24,7 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 const len = form.querySelector('[name="motivo"]').value.trim().length;
                 return `Contanos un poco más (${len}/30 caracteres mínimos).`;
             }
+        },
+        asunto: {
+            test: v => v.trim().length >= 3,
+            msg:  'El asunto debe tener al menos 3 caracteres.'
+        },
+        mensaje: {
+            test: v => v.trim().length >= 10,
+        msg:  () => {
+            const input = form.querySelector('[name="mensaje"]');
+            const len = input ? input.value.trim().length : 0;
+            return `El mensaje debe tener al menos 10 caracteres (${len}/10).`;
         }
+    }
     };
 
     /* ── Helpers DOM ─────────────────────────────────── */

@@ -11,10 +11,8 @@ class Animal
     private string $sexo;
     private string $imagen;
     private string $descripcion;
-    private string $emoji;
-    
-    // Constructor para inicializar las propiedades
-    public function __construct(int $id, string $especie, array $raza, string $nombre, int $edad, string $sexo, string $imagen, string $descripcion = '', string $emoji = '')
+
+    public function __construct(int $id, string $especie, array $raza, string $nombre, int $edad, string $sexo, string $imagen, string $descripcion)
     {
         $this->id          = $id;
         $this->especie     = $especie;
@@ -24,10 +22,38 @@ class Animal
         $this->sexo        = $sexo;
         $this->imagen      = $imagen;
         $this->descripcion = $descripcion;
-        $this->emoji       = $emoji;
     }
 
-    // Metodos públicos para acceder a las propiedades (getters)
+    /**
+     * Carga todos los animales desde el archivo JSON.
+     *
+     * @return array Array de objetos Animal.
+     */
+    public static function cargarTodosLosAnimales(): array
+    {
+        $json = file_get_contents(__DIR__ .'/../datos/animales.json');
+        $animalesDatos = json_decode($json, true);
+
+        $animales = [];
+
+        foreach ($animalesDatos as $item) {
+
+            $animales[$item['id']] = new Animal(
+                $item['id'],
+                $item['especie'],
+                $item['raza'],
+                $item['nombre'],
+                $item['edad'],
+                $item['sexo'],
+                $item['imagen'],
+                $item['descripcion']
+            );
+        }
+
+        return $animales;
+    }
+
+    //Getters
     public function getId(): int
     {
         return $this->id;
@@ -60,12 +86,8 @@ class Animal
     {
         return $this->descripcion;
     }
-    public function getEmoji(): string
-    {
-        return $this->emoji;
-    }
 
-    // Metodos publicos para modificar las propiedades (setters)
+    //Setters
     public function setId(int $id): void
     {
         $this->id = $id;
@@ -98,9 +120,4 @@ class Animal
     {
         $this->descripcion = $descripcion;
     }
-    public function setEmoji(string $emoji): void
-    {
-        $this->emoji = $emoji;
-    }
-
 }

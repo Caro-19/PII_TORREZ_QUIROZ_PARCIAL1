@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../includes/animales.php';
+require_once __DIR__ . '/../clases/Animal.php';
+$animales = Animal::cargarTodosLosAnimales();
 ?>
 <section class="hero">
     <div class="hero-banner">
@@ -46,42 +47,95 @@ require_once __DIR__ . '/../includes/animales.php';
     </div>
 </section>
 
-<!-- CÓMO FUNCIONA -->
-<section class="features" id="como-funciona">
+<!-- PROPÓSITO -->
+<section class="features">
     <div class="section-header">
-        <h2>¿Cómo funciona?</h2>
-        <p>El proceso es simple, transparente y está pensado para el bienestar de cada animal.</p>
+        <h2>Nuestro Propósito</h2>
+        <p>
+            En PetVet creemos que cada mascota merece una segunda oportunidad.
+            Nuestra misión es conectar animales que buscan un hogar con personas
+            dispuestas a brindarles amor, cuidado y una adopción responsable.
+            Además, ayudamos a los usuarios a encontrar la mascota que mejor se
+            adapta a su estilo de vida mediante recomendaciones personalizadas.
+        </p>
     </div>
+
     <div class="features-grid">
         <div class="feature-card">
-            <a href="index.php?s=adopcion">
-                <div class="feature-icon-wrap">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-                <span class="feature-step">01</span>
-                <h3>Explorá los perfiles</h3>
-                <p>Conocé a cada animal: su historia, personalidad y necesidades. Encontrá el compañero ideal para tu estilo de vida.</p>
-            </a>
+            <div class="feature-icon-wrap">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <h3>Adopción Responsable</h3>
+            <p>
+                Promovemos adopciones conscientes para garantizar el bienestar
+                tanto de las mascotas como de sus futuras familias.
+            </p>
         </div>
+
         <div class="feature-card">
-            <a href="index.php?s=mascotaIdeal">
-                <div class="feature-icon-wrap">
-                    <i class="fa-solid fa-file-pen"></i>
-                </div>
-                <span class="feature-step">02</span>
-                <h3>Completá el formulario</h3>
-                <p>Contanos sobre vos y tu hogar. Queremos asegurarnos de que sea la combinación perfecta para ambos.</p>
-            </a>
+            <div class="feature-icon-wrap">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <h3>Un Hogar para Cada Mascota</h3>
+            <p>
+                Buscamos reducir el abandono animal ayudando a que perros y gatos
+                encuentren un hogar seguro y lleno de cariño.
+            </p>
         </div>
+
         <div class="feature-card">
-            <a href="index.php?s=contacto">
-                <div class="feature-icon-wrap">
-                    <i class="bi bi-telephone-fill"></i>
-                </div>
-                <span class="feature-step">03</span>
-                <h3>Llevate a tu compañero</h3>
-                <p>Nos ponemos en contacto, coordinamos la entrega y te acompañamos en los primeros pasos de la convivencia.</p>
-            </a>
+            <div class="feature-icon-wrap">
+                <i class="fa-solid fa-paw"></i>
+            </div>
+            <h3>Mascota Ideal</h3>
+            <p>
+                Nuestro sistema de recomendaciones ayuda a encontrar mascotas
+                compatibles con el estilo de vida de cada usuario.
+            </p>
         </div>
+    </div>
+</section>
+
+<!-- PROCESO DE ADOPCION -->
+<section class="adoption-process" id="como-funciona">
+    <div class="section-header">
+        <h2>Proceso de Adopción</h2>
+        <p>
+            Encontrar a tu nuevo compañero es muy fácil.
+        </p>
+    </div>
+
+    <div class="process-steps">
+
+        <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3>Explorá las mascotas</h3>
+                <p>
+                    Conocé a los animales disponibles y descubrí cuál podría ser tu compañero ideal.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>Realizá el test</h3>
+                <p>
+                    Completá Mascota Ideal para recibir recomendaciones personalizadas.
+                </p>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>Enviá tu solicitud</h3>
+                <p>
+                    Contactanos para comenzar el proceso de adopción responsable.
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>

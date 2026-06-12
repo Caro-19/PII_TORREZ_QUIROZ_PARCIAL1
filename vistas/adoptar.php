@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../includes/animales.php';
+require_once __DIR__ . '/../clases/Animal.php';
+$animales = Animal::cargarTodosLosAnimales();
 
 $id         = (int)($_GET['animal'] ?? 0);
 $animal       = $animales[$id] ?? null;
@@ -8,6 +9,9 @@ if (!$animal) {
     exit;
 };
 $nombreAnimal = $animal ? $animal->getNombre() : ucfirst($id);
+
+$error = $_GET['error'] ?? '';
+
 ?>
 
 <div class="page-header page-header-sm">
@@ -35,6 +39,13 @@ $nombreAnimal = $animal ? $animal->getNombre() : ucfirst($id);
     <form action="index.php?s=procesarAdopcion" method="POST" data-validate novalidate>
 
         <input type="hidden" name="animal" value="<?= htmlspecialchars($id) ?>">
+
+        <?php if ($error): ?>
+            <div class="alert alert-danger">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <?= htmlspecialchars($error) ?>
+            </div>
+        <?php endif; ?>
 
         <div class="form-group">
             <label for="nombre">

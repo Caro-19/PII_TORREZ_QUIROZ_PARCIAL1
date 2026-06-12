@@ -1,3 +1,11 @@
 [
-
+    {
+        "id": 1,
+        "idAnimal": 3,
+        "nombreAnimal": "Nala",
+        "nombreAdoptante": "Carol Torrez",
+        "email": "caroltorrez332@gmail.com",
+        "telefono": "+541123506103",
+        "motivo": "ssdgsdbsfbsfnsfbsfbsfbssfbsfbfbsf"
+    }
 ]

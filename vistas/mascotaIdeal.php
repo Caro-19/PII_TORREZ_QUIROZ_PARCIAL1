@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../includes/razas.php';
+require_once __DIR__ . '/../clases/Raza.php';
+$razas = Raza::cargarTodasLasRazas();
 ?>
 
 <div class="page-header">

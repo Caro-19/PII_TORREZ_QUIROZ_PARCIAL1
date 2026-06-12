@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../includes/animales.php';
+require_once __DIR__ . '/../clases/Animal.php';
+$animales = Animal::cargarTodosLosAnimales();
 ?>
 
 <!-- TITULO PRICIPAL DE LA PAGINA -->

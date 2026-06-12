@@ -7,7 +7,6 @@
         "raza": ["Labrador"],
         "sexo": "Hembra",
         "descripcion": "Luna es una perrita juguetona y cariñosa que ama correr en el parque. Se lleva muy bien con niños y otros animales. Siempre está dispuesta a dar amor y recibir mimos.",
-        "emoji": "",
         "imagen": "imagenes/animales/1.png"
     },
 
@@ -19,7 +18,6 @@
         "raza": ["Gato Común Europeo","Oriental"],
         "sexo": "Macho",
         "descripcion": "Milo es un gatito curioso y tranquilo. Le encanta explorar cada rincón de la casa, tomar siestas al sol y jugar con cualquier cosa que encuentre. Muy cariñoso.",
-        "emoji": "",
         "imagen": "imagenes/animales/2.png"
     },
 
@@ -31,7 +29,6 @@
         "raza": ["Beagle"],
         "sexo": "Hembra",
         "descripcion": "Nala es una beagle activa, sociable y llena de energía. Disfruta de los paseos largos y es muy leal a su familia. Ideal para hogares con espacio al aire libre.",
-        "emoji": "",        
         "imagen": "imagenes/animales/3.png"
     },
 
@@ -43,7 +40,6 @@
         "raza": ["Siamés"],
         "sexo": "Macho",
         "descripcion": "Simba es elegante, tranquilo y muy cariñoso. Busca un hogar tranquilo donde pueda recibir atención y descansar en ambientes cálidos. Le gustan las rutinas estables.",
-        "emoji": "",       
         "imagen": "imagenes/animales/4.png"
     },
 
@@ -55,7 +51,6 @@
         "raza": ["Pastor Alemán"],
         "sexo": "Macho",
         "descripcion": "Rocky es inteligente, obediente y muy entrenado. Es el compañero perfecto para familias activas que disfruten del aire libre y los desafíos mentales.",
-        "emoji": "",        
         "imagen": "imagenes/animales/5.png"
     },
     
@@ -67,7 +62,6 @@
         "raza": ["Pastor Alemán"],
         "sexo": "Macho",
         "descripcion": "Maximus es un perro imperactivo y cariñoso que disfruta de la compañía humana. Es ideal para hogares que buscan un compañero con energía y afectuoso.",
-        "emoji": "",        
         "imagen": "imagenes/animales/6.png"
     },
 
@@ -79,7 +73,6 @@
         "raza": ["Maine Coon"],
         "sexo": "Hembra",
         "descripcion": "Kiara es una gatita elegante y muy curiosa. Le encanta observar por las ventanas, jugar con juguetes pequeños y dormir en lugares cómodos.",
-        "emoji": "",
         "imagen": "imagenes/animales/7.png"
     },
 
@@ -91,7 +84,6 @@
         "raza": ["Golden Retriever"],
         "sexo": "Macho",
         "descripcion": "Toby es amistoso, paciente y muy juguetón. Disfruta correr en parques y pasar tiempo con niños y otros animales.",
-        "emoji": "",
         "imagen": "imagenes/animales/8.png"
     },
 
@@ -103,7 +95,6 @@
         "raza": ["Siamés"],
         "sexo": "Hembra",
         "descripcion": "Luna es una gatita juguetona y curiosa. Le encanta explorar y jugar con sus juguetes favoritos.",
-        "emoji": "",
         "imagen": "imagenes/animales/9.png"
     },
 
@@ -115,7 +106,6 @@
         "raza": ["Bulldog Inglés"],
         "sexo": "Macho",
         "descripcion": "Charlie es un perro tranquilo y muy cariñoso. Disfruta de los paseos cortos y de pasar tiempo con su familia.",
-        "emoji": "",
         "imagen": "imagenes/animales/10.png"
     },
 
@@ -127,7 +117,6 @@
         "raza": ["Bulldog Francés"],
         "sexo": "Macho",
         "descripcion": "Bruno es tranquilo y muy cariñoso. Prefiere descansar cerca de sus dueños y disfruta de caminatas cortas y juegos suaves.",
-        "emoji": "",
         "imagen": "imagenes/animales/11.png"
     },
 
@@ -140,7 +129,6 @@
         "raza": ["Británico de Pelo Corto"],
         "sexo": "Macho",
         "descripcion": "Leo es independiente pero muy afectuoso. Le gusta descansar cerca de las personas y jugar en momentos específicos del día.",
-        "emoji": "",
         "imagen": "imagenes/animales/12.png"
     },
 
@@ -152,7 +140,6 @@
         "raza": ["Caniche"],
         "sexo": "Hembra",
         "descripcion": "Lola es pequeña, inteligente y muy energética. Aprende trucos rápidamente y disfruta mucho de la compañía humana.",
-        "emoji": "",
         "imagen": "imagenes/animales/13.jpg"
     },
 
@@ -164,7 +151,6 @@
         "raza": ["Rottweiler"],
         "sexo": "Macho",
         "descripcion": "Zeus es fuerte, protector y extremadamente leal. Necesita un hogar responsable donde pueda recibir ejercicio y entrenamiento constante.",
-        "emoji": "",
         "imagen": "imagenes/animales/14.png"
     },
 
@@ -176,7 +162,6 @@
         "raza": ["Persa"],
         "sexo": "Hembra",
         "descripcion": "Olivia es calmada y muy elegante. Disfruta de ambientes tranquilos y de recibir cepillados frecuentes.",
-        "emoji": "",
         "imagen": "imagenes/animales/15.png"
     },
 
@@ -188,7 +173,6 @@
         "raza": ["Chihuahua"],
         "sexo": "Hembra",
         "descripcion": "Coco es pequeña pero llena de personalidad. Es valiente, curiosa y muy apegada a su dueño. Ideal para departamentos y personas que buscan un compañero fiel y compacto.",
-        "emoji": "",
         "imagen": "imagenes/animales/16.png"
     },
 
@@ -200,7 +184,6 @@
         "raza": ["Pit Bull"],
         "sexo": "Macho",
         "descripcion": "Rex es enérgico, leal y muy cariñoso con su familia. Necesita ejercicio diario y un dueño comprometido. Con el entrenamiento adecuado es un compañero extraordinario.",
-        "emoji": "",
         "imagen": "imagenes/animales/17.png"
     },
 
@@ -212,7 +195,6 @@
         "raza": ["Bengala"],
         "sexo": "Macho",
         "descripcion": "Tigre es un gato salvaje en apariencia pero muy afectuoso. Le encanta trepar, explorar y jugar. Es ideal para hogares activos que disfruten de un felino dinámico y llamativo.",
-        "emoji": "",
         "imagen": "imagenes/animales/18.png"
     },
 
@@ -224,7 +206,6 @@
         "raza": ["Ragdoll"],
         "sexo": "Hembra",
         "descripcion": "Nube es dulce, tranquila y muy sociable. Se relaja completamente al ser alzada, de ahí su nombre de raza. Perfecta para hogares con niños o personas mayores.",
-        "emoji": "",
         "imagen": "imagenes/animales/19.png"
     },
 
@@ -236,7 +217,6 @@
         "raza": ["Esfinge (Sphynx)"],
         "sexo": "Macho",
         "descripcion": "Fénix es único, sin pelo y lleno de carisma. Es extremadamente cariñoso y siempre busca el calor humano. Un compañero sorprendente para quienes buscan algo diferente.",
-        "emoji": "",
         "imagen": "imagenes/animales/20.png"
     },
 
@@ -248,7 +228,6 @@
         "raza": ["Angora"],
         "sexo": "Hembra",
         "descripcion": "Blanca es elegante, grácil y muy inteligente. Le encanta interactuar con las personas y aprender rutinas. Su pelaje sedoso requiere cepillados frecuentes.",
-        "emoji": "",
         "imagen": "imagenes/animales/21.png"
     },
 
@@ -260,7 +239,6 @@
         "raza": ["Scottish Fold"],
         "sexo": "Macho",
         "descripcion": "Dobby es tranquilo, curioso y de orejas características. Se adapta bien a la vida en interior y disfruta de juegos suaves y de la compañía de su familia.",
-        "emoji": "",
         "imagen": "imagenes/animales/22.png"
     },
 
@@ -272,7 +250,6 @@
         "raza": ["Siberiano"],
         "sexo": "Hembra",
         "descripcion": "Taiga es robusta, activa y muy juguetona. Su pelaje espeso la protege del frío y su personalidad aventurera la hace ideal para hogares con jardín o espacios amplios.",
-        "emoji": "",
         "imagen": "imagenes/animales/23.png"
     },
 
@@ -284,7 +261,6 @@
         "raza": ["Abisinio"],
         "sexo": "Hembra",
         "descripcion": "Sahara es ágil, curiosa e incansable. Le encanta explorar, saltar y estar en constante movimiento. Ideal para personas activas que disfruten de un gato muy dinámico.",
-        "emoji": "",
         "imagen": "imagenes/animales/24.png"
     },
 
@@ -296,7 +272,6 @@
         "raza": ["Ruso Azul"],
         "sexo": "Macho",
         "descripcion": "Misha es reservado pero muy leal a su familia. De pelaje azul plateado y ojos verdes intensos, es un gato elegante que prefiere ambientes tranquilos y rutinas estables.",
-        "emoji": "",
         "imagen": "imagenes/animales/25.png"
     },
 
@@ -308,7 +283,6 @@
         "raza": ["Manx"],
         "sexo": "Macho",
         "descripcion": "Bobtail es sociable, inteligente y muy juguetón. Se caracteriza por su cola corta o ausente. Se lleva bien con niños y otros animales y disfruta de la vida en familia.",
-        "emoji": "",
         "imagen": "imagenes/animales/26.jpg"
     }
 ]

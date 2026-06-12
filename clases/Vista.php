@@ -7,6 +7,12 @@ class Vista
     private bool $activa;
     private bool $restringida;
 
+    /**
+     * Valida la vista solicitada y devuelve un objeto Vista correspondiente.
+     *
+     * @param string $pedido Nombre de la vista solicitada via GET.
+     * @return Vista Objeto Vista con los datos correspondientes.
+     */
     public static function validarVista(string $pedido): Vista
     {
         $datos = file_get_contents(__DIR__ . '/../datos/vistas.json');

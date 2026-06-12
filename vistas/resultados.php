@@ -1,6 +1,9 @@
 <?php
-require_once __DIR__ . '/../includes/animales.php';
-require_once __DIR__ . '/../includes/razas.php';
+require_once __DIR__ . '/../clases/Animal.php';
+require_once __DIR__ . '/../clases/Raza.php';
+
+$animales = Animal::cargarTodosLosAnimales();
+$razas = Raza::cargarTodasLasRazas();
 
 // Si no viene un POST redirige al test
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -8,9 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-/* ===========================
+/*
    DATOS DEL FORMULARIO
-=========================== */
+ */
 
 $razasElegidas  = $_POST['razas'] ?? [];
 $tipoMascota    = $_POST['tipoMascota'] ?? 'Ambos';
@@ -18,11 +21,9 @@ $espacio        = $_POST['espacio'] ?? '';
 $familiares     = (int)($_POST['familiares'] ?? 0);
 $energiaElegida = $_POST['energia'] ?? '';
 
-$energiaElegida = $_POST['energia'] ?? '';
-
-/* ===========================
+/* 
    VALIDACIONES
-=========================== */
+ */
 
 // Máximo 3 razas
 if (count($razasElegidas) > 3) {
@@ -76,7 +77,7 @@ if (!in_array($energiaElegida, $energiasPermitidas)) {
 
 
 
-// Espacio → tamaños compatibles
+//Espacio → tamaños compatibles
 $espacioCompatible = [
     'pequeño' => ['Pequeño', 'Toy'],
     'mediano' => ['Pequeño', 'Toy', 'Mediano'],
@@ -95,7 +96,7 @@ $familiaresCompatible = [
 $tamaniosValidos = $espacioCompatible[$espacio]       ?? [];
 $energiasValidas = $familiaresCompatible[$familiares] ?? [];
 
-// ── Puntaje por animal ──────────────────────────────────────────────────────
+//Puntaje por animal 
 $puntajes = [];
 
 foreach ($animales as $id => $animal) {
@@ -152,7 +153,7 @@ if (empty($puntajes)) {
         <p>Probá ampliando tus preferencias o seleccionando más opciones.</p>
     </div>
 
-    <div style="text-align:center; margin:2rem;">
+    <div>
         <a href="index.php?s=mascotaIdeal" class="btn btn-accent">
             Volver al formulario
         </a>
@@ -226,14 +227,13 @@ $puntajeMaximo = max($puntajes);
     ?>
 </section>
 
-<!-- BOTONES EN ESQUINAS -->
 <div class="resultados-nav">
     <a href="index.php?s=mascotaIdeal" class="btn btn-accent btn-lg">
         <i class="fa-solid fa-arrow-left"></i>
-         Volver a hacer el test
+        Volver a hacer el test
     </a>
     <a href="index.php?s=adopcion" class="btn btn-accent btn-lg">
-        Ver adopciones 
+        Ver adopciones
         <i class="fa-solid fa-arrow-right"></i>
     </a>
 </div>

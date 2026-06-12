@@ -44,7 +44,6 @@ body {
 
 
 main { 
-    flex: 1;
     align-content: center;
 
 }
@@ -368,12 +367,20 @@ nav a:hover {
 }
 
 .feature-card {
+    margin-top: 1rem;
     background: var(--card-bg);
     border-radius: var(--radius);
     padding: 2rem 1.75rem;
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
     position: relative;
+    transition: transform var(--transition),
+                box-shadow var(--transition);
+}
+
+.feature-card:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
 
 .feature-icon-wrap {
@@ -410,6 +417,71 @@ nav a:hover {
     font-size: 0.88rem;
     color: var(--text-muted);
     line-height: 1.65;
+}
+
+/* Sección PASO A PASO del proceso de adopción  */
+.adoption-process{
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.process-steps{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    position:relative;
+}
+
+.process-steps::before{
+    content:"";
+    position:absolute;
+    left:24px;
+    top:0;
+    bottom:0;
+    width:3px;
+    background:var(--border);
+}
+
+.process-step{
+    display:flex;
+    gap:1.5rem;
+    position:relative;
+}
+
+.step-number{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:var(--primary);
+    color:white;
+    font-weight:900;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    z-index:2;
+}
+
+.step-content{
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:1.25rem;
+    box-shadow:var(--shadow);
+    flex:1;
+}
+
+.step-content h3{
+    color:var(--primary-dark);
+    font-size:1rem;
+    font-weight:800;
+    margin-bottom:.5rem;
+}
+
+.step-content p{
+    color:var(--text-muted);
+    font-size:.9rem;
 }
 
 /* --- Page header ------------------------------------------ */
@@ -1010,6 +1082,7 @@ form.shake { animation: shake 0.5s ease; }
     justify-content: space-between;
     margin:1rem;
 }
+
 
 /* --- Footer ----------------------------------------------- */
 footer {

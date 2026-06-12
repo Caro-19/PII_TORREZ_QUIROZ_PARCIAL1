@@ -1,4 +1,7 @@
-<?php require_once __DIR__ . '/../includes/contacto.php'; ?>
+<?php 
+require_once __DIR__ . '/../includes/contacto.php';
+
+?>
 
 <div class="page-header">
     <h2><i class="fa-solid fa-circle-check"></i> ¡Mensaje enviado!</h2>

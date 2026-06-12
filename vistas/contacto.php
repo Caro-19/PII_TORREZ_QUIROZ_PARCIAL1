@@ -1,3 +1,6 @@
+<?php
+$error = $_GET['error'] ?? '';
+?>
 <section class="page-header">
     <h2>
         Contactanos
@@ -28,7 +31,7 @@
             </p>
         </div>
 
-        <div class="feature-card" style="margin-top:1rem;">
+        <div class="feature-card heart">
             <div class="feature-icon-wrap">
                 <i class="fa-solid fa-heart"></i>
             </div>
@@ -41,7 +44,14 @@
         </div>
     </div>
 
-    <form action="index.php?s=procesarContacto" method="POST">
+    <form action="index.php?s=procesarContacto" method="POST" data-validate novalidate>
+
+        <?php if ($error): ?>
+            <div class="alert alert-danger">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <?= htmlspecialchars($error) ?>
+            </div>
+        <?php endif; ?>
 
         <div class="form-group">
             <label for="nombre">
@@ -55,6 +65,7 @@
                 name="nombre"
                 placeholder="Ej: Juan Pérez"
                 required>
+            <p class="form-error" role="alert"></p>
         </div>
 
         <div class="form-group">
@@ -69,6 +80,7 @@
                 name="email"
                 placeholder="ejemplo@email.com"
                 required>
+            <p class="form-error" role="alert"></p>
         </div>
 
         <div class="form-group">
@@ -82,6 +94,7 @@
                 id="telefono"
                 name="telefono"
                 placeholder="11 1234 5678">
+            <p class="form-error" role="alert"></p>
         </div>
 
         <div class="form-group">
@@ -96,6 +109,7 @@
                 name="asunto"
                 placeholder="Consulta sobre adopción"
                 required>
+            <p class="form-error" role="alert"></p>
         </div>
 
         <div class="form-group">
@@ -108,7 +122,9 @@
                 id="mensaje"
                 name="mensaje"
                 placeholder="Contanos cómo podemos ayudarte..."
-                required></textarea>
+                required>
+            </textarea>
+            <p class="form-error" role="alert"></p>
         </div>
 
         <button type="submit" class="btn btn-accent btn-block">
@@ -119,3 +135,5 @@
     </form>
 
 </section>
+
+<script src="js/validacion.js"></script>
